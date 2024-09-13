@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        margin: 0px;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    button {
+
+        padding: 15px 50px;
+        border: none;
+        background-color: greenyellow;
+        cursor: pointer;
+        font-size: 15px;
+
+
+    }
+
+    button:hover {
+
+        border: 1px solid black;
+    }
+
+    #btn {
+
+        background-color: greenyellow;
+    }
+</style>
+
+<body>
+
+    <div class="main">
+
+        <button id="btn" onclick="changeBG('#FF0000')">Change BG Color</button>
+
+    </div>
+
+
+
+    <script>
+
+
+
+        function changeBG(Color) {
+
+            //  document.body.style.backgroundColor = Color;
+
+            let currentcolor = document.body.style.backgroundColor;
+
+
+            if (currentcolor === "rgb(173,255,47)" || currentcolor === "#FF0000") {
+
+
+                document.body.style.backgroundColor = "white";
+
+            } else {
+
+                document.body.style.backgroundColor = "#FF0000";
+            }
+
+
+        }
+
+    </script>
+
+</body>
+
+</html>
